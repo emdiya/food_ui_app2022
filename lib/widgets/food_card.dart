@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:google_fonts/google_fonts.dart';
 import 'package:testapp/model/foods_model.dart';
 import 'package:testapp/pages/foods_detail.dart';
 
@@ -76,14 +75,14 @@ class DrinkCard extends StatelessWidget {
             const SizedBox(height: 2),
             Text(
               "${food!.rating!}",
-              style: GoogleFonts.enriqueta(
+              style: const TextStyle(
                 fontSize: 10,
                 color: Colors.white,
               ),
             ),
-            Text(
+            const Text(
               "(1k+)",
-              style: GoogleFonts.enriqueta(
+              style: TextStyle(
                 fontSize: 10,
                 color: Colors.white70,
               ),
@@ -100,7 +99,7 @@ class DrinkCard extends StatelessWidget {
       children: [
         Text(
           food!.name!,
-          style: GoogleFonts.enriqueta(
+          style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w500,
           ),

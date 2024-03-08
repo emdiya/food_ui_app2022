@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:google_fonts/google_fonts.dart';
 import 'package:testapp/model/foods_model.dart';
 import 'package:testapp/widgets/custom_icon_button.dart';
 
@@ -144,9 +143,9 @@ class _DrinkDetailPageState extends State<DrinkDetailPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Particular",
-            style: GoogleFonts.jost(
+            style: TextStyle(
               color: Colors.blue,
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -155,7 +154,7 @@ class _DrinkDetailPageState extends State<DrinkDetailPage> {
           const SizedBox(height: 4),
           Text(
             food.description!,
-            style: GoogleFonts.jost(
+            style: TextStyle(
               fontSize: 12,
               color: Colors.black.withOpacity(0.5),
             ),
@@ -171,9 +170,9 @@ class _DrinkDetailPageState extends State<DrinkDetailPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Service",
-            style: GoogleFonts.jost(
+            style: TextStyle(
               color: Colors.blue,
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -251,9 +250,9 @@ class _DrinkDetailPageState extends State<DrinkDetailPage> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),
                           )),
-                      child: Text(
+                      child: const Text(
                         'Purchased',
-                        style: GoogleFonts.jost(
+                        style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w500),
                       ),
                     ),
